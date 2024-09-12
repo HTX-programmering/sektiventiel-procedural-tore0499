@@ -1,0 +1,100 @@
+       Opgave 5.1
+size(500,500);
+circle(250,250,250);
+square(195,200,40);
+square(265,200,40);
+circle(250,265,69);
+arc(250, 305, 115, 115, 0, PI, CHORD);
+fill(#000000);
+square(195,40,110);
+fill(#000000);
+rect(150,140, 200, 10);
+
+       opgave 5.2
+void setup(){
+size(500,500);
+}
+void draw(){
+  head();
+}
+void head(){
+fill(#FFFFFF);
+circle(250,250,250);
+square(195,200,40);
+square(265,200,40);
+circle(250,265,69);
+arc(250, 305, 115, 115, 0, PI, CHORD);
+fill(#000000);
+square(195,40,110);
+fill(#000000);
+rect(150,140, 200, 10);
+}
+
+       opgave 5.3
+void setup(){
+size(500,500);
+}
+void draw(){
+  face();
+  eyes();
+  mouth();
+  hat();
+}
+void face(){
+fill(#FFFFFF);
+circle(250,250,250);
+circle(250,265,69);
+}
+void eyes(){
+fill(#FFFFFF);
+square(195,200,40);
+square(265,200,40);
+}
+void mouth(){
+arc(250, 305, 115, 115, 0, PI, CHORD);
+}
+void hat(){
+fill(#000000);
+square(195,40,110);
+fill(#000000);
+rect(150,140, 200, 10);
+}
+
+       opgave 5.4
+void setup() {
+  size(1000, 750);
+}
+void draw() {
+  float x=width/2;
+  float y=height/2;
+  face(x, y);
+  eyes(x, y);
+  mouth(x, y);
+  hat(x, y);
+  nose(x, y);
+}
+void face(float x, float y) {
+  fill(#FF0000);
+  circle(x-250, y-100, 250);
+}
+void nose(float x, float y) {
+  fill(#FFFFFF);
+  circle(x-250, y-100, 69);
+}
+void eyes(float x, float y) {
+  fill(#008AFF);
+  square(x-305, y-166, 40);
+  square(x-240, y-166, 40);
+}
+void mouth(float x, float y) {
+  fill(#FFFFFF);
+  arc(x-250, y-50, 115, 115, 0, PI, CHORD);
+}
+void hat(float x, float y) {
+  fill(#000000);
+  square(x-306, y-320, 110);
+  fill(#000000);
+  rect(x-350, y-215, 200, 10);
+}
+
+       opgave 5.5
